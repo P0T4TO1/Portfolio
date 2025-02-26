@@ -2,15 +2,19 @@ import { Link } from '@heroui/link';
 import { Button } from '@heroui/button';
 import { Image } from '@heroui/image';
 import { button as buttonStyles } from '@heroui/theme';
+import { FileUser, PanelsTopLeft } from 'lucide-react';
 
-import { ProjectCard } from '@/components/card';
+import { ProjectCard, ContactCard } from '@/components/card';
 import { SkillArea } from '@/components/skillItem';
-
+import { Timeline } from '@/components/timeline';
 import { siteConfig, skillsURLs } from '@/config/site';
 import { title, subtitle } from '@/components/primitives';
-import { GithubIcon, LinkedinIcon } from '@/components/icons';
-
-import { FileUser, PanelsTopLeft, MailPlus } from 'lucide-react';
+import {
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  WhatsappIcon,
+} from '@/components/icons';
 
 export default function Home() {
   return (
@@ -36,13 +40,6 @@ export default function Home() {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <Link
-            isExternal
-            aria-label="Correo"
-            href="mailto:jaretgarciagomez@gmail.com"
-          >
-            <MailPlus className="text-default-500" />
-          </Link>
         </div>
 
         <div className="flex gap-3 mt-4 -ml-1">
@@ -53,9 +50,9 @@ export default function Home() {
               radius: 'full',
               variant: 'shadow',
             })}
-            size="lg"
-            href={'#projects'}
             endContent={<PanelsTopLeft />}
+            href={'#projects'}
+            size="lg"
           >
             Proyectos
           </Button>
@@ -65,8 +62,8 @@ export default function Home() {
               radius: 'full',
               variant: 'ghost',
             })}
-            size="lg"
             endContent={<FileUser />}
+            size="lg"
           >
             Descargar CV
           </Button>
@@ -74,8 +71,8 @@ export default function Home() {
       </section>
 
       <section
-        id="projects"
         className="flex flex-col justify-center gap-4 py-8 md:py-10"
+        id="projects"
       >
         <div className="inline-block max-w-xl justify-center">
           <span className="font-semibold text-4xl">Proyectos</span>
@@ -84,7 +81,7 @@ export default function Home() {
             Algunos de los proyectos en los que he trabajado
           </span>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <ProjectCard
             project={{
               title: 'Harvest Reborn',
@@ -118,7 +115,7 @@ export default function Home() {
               description:
                 'Juego de Tetris multijugador en tiempo real, con salas de juego y chat. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React, Socket.io, Node y Express para la comunicación en tiempo real y la gestión de las salas de juego.',
               image: '/tetris1v1_screen.png',
-              link: 'https://harvestreborn.me',
+              link: 'https://tetris1v1-b491b57867ff.herokuapp.com',
             }}
             techs={['JavaScript', 'Node.js', 'Express']}
           />
@@ -136,7 +133,7 @@ export default function Home() {
             Algunas de las tecnologías con las que trabajo
           </span>
         </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 text-center">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 text-center">
           {Object.entries(skillsURLs).map(([area, skills]) => (
             <SkillArea key={area} area={area} skills={skills} />
           ))}
@@ -147,35 +144,60 @@ export default function Home() {
         className="flex flex-col justify-center gap-4 py-8 md:py-10"
         id="about"
       >
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="inline-block justify-center">
-            <span className="font-semibold text-4xl">Sobre mi</span>
-            <br />
-            <p className="lg:text-lg text-md text-default-700 my-2">
-              Soy un desarrollador de 20 años, con experiencia en el desarrollo
-              de aplicaciones web y móviles, interesado en la optimización de
-              procesos y la creación de soluciones tecnológicas innovadoras.
-              Egresado del CECyT 9 "Juan de Dios Bátiz" en la carrera de Técnico
-              en Programación y actualmente estudiante de la carrera de
-              Licenciatura en Informática en la Universidad Nacional Autónoma de
-              México (UNAM). Me apasiona la tecnología y la programación, y
-              busco siempre aprender y mejorar mis habilidades. Desde temprano
-              en mi formacion técnica he trabajado en proyectos de desarrollo de
-              software, adquiriendo bases sólidas en el desarrollo de
-              aplicaciones web y móviles, así como en la gestión de bases de
-              datos y el análisis de datos. Actualmente me encuentro en la
-              búsqueda de oportunidades laborales que me permitan seguir
-              creciendo y desarrollándome como profesional.
-            </p>
+        <div className="my-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="inline-block justify-center">
+              <span className="font-semibold text-3xl">Sobre mi</span>
+              <br />
+              <p className="text-md text-default-700 my-2">
+                Soy un desarrollador de 20 años, con experiencia en el
+                desarrollo de aplicaciones web y móviles, interesado en la
+                optimización de procesos y la creación de soluciones
+                tecnológicas innovadoras. Egresado del CECyT 9 &quot;Juan de
+                Dios Bátiz&quot; en la carrera de Técnico en Programación y
+                actualmente estudiante de la carrera de Licenciatura en
+                Informática en la Universidad Nacional Autónoma de México
+                (UNAM). Me apasiona la tecnología y la programación, y busco
+                siempre aprender y mejorar mis habilidades. Desde temprano en mi
+                formacion técnica he trabajado en proyectos de desarrollo de
+                software, adquiriendo bases sólidas en el desarrollo de
+                aplicaciones web y móviles, así como en la gestión de bases de
+                datos y el análisis de datos. Actualmente me encuentro en la
+                búsqueda de oportunidades laborales que me permitan seguir
+                creciendo y desarrollándome como profesional.
+              </p>
+            </div>
+            <div className="flex inline-block items-center justify-center">
+              <Image
+                alt="Jaret Garcia"
+                className="bg-stone-500"
+                radius="full"
+                src="/jaret.jpg"
+                width={300}
+              />
+            </div>
           </div>
-          <div className="inline-block justify-center">
-            <Image
-              alt="Jaret Garcia"
-              width={300}
-              radius="full"
-              src="/jaret.jpg"
-            />
-          </div>
+        </div>
+        <div className="my-4">
+          <span className="font-semibold text-3xl">Educación</span>
+          <br />
+          <Timeline />
+        </div>
+      </section>
+      <section className="flex flex-col justify-center gap-4 py-8 md:py-10">
+        <div className="inline-block max-w-xl justify-center">
+          <span className="font-semibold text-4xl">Contacto</span>
+        </div>
+        <div className="flex gap-3 px-8">
+          {Object.entries(siteConfig.contacts).map(([index, contact]) => (
+            <div key={index} className="md:w-1/3">
+              <ContactCard
+                name={contact.name}
+                link={contact.link}
+                type={contact.type as 'Linkedin' | 'Mail' | 'Whatsapp'}
+              />
+            </div>
+          ))}
         </div>
       </section>
     </>

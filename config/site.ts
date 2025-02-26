@@ -50,7 +50,26 @@ export const siteConfig = {
   links: {
     github: 'https://github.com/P0T4TO1',
     linkedin: 'https://www.linkedin.com/in/jaret-garcia/',
+    email: 'jaretgarciagomez@gmail.com',
+    whatsapp: 'https://wa.me/5567621246',
   },
+  contacts: [
+    {
+      name: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/jaret-garcia/',
+      type: 'Linkedin',
+    },
+    {
+      name: 'Mail',
+      link: 'mailto:jaretgarciagomez@gmail.com',
+      type: 'Mail',
+    },
+    {
+      name: 'WhatsApp',
+      link: 'https://wa.me/5567621246',
+      type: 'Whatsapp',
+    },
+  ],
 };
 
 export const skillsURLs = {

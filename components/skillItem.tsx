@@ -28,7 +28,7 @@ export const SkillItem: React.FC<SkillItemProps> = ({ alt, src, label }) => {
 
 export const SkillArea: React.FC<SkillAreaProps> = ({ area, skills }) => {
   return (
-    <Card className="p-4">
+    <Card className="p-4 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
       <div className="flex flex-col gap-4">
         <span className="font-semibold text-2xl">{area}</span>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
