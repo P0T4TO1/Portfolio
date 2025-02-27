@@ -162,7 +162,7 @@ export default function Home() {
         <div className="inline-block max-w-xl justify-center">
           <span className="font-semibold text-4xl">Contacto</span>
         </div>
-        <div className="flex gap-3 px-8">
+        <div className="flex gap-3 md:px-8">
           {Object.entries(siteConfig.contacts).map(([index, contact]) => (
             <div key={index} className="md:w-1/3">
               <ContactCard
