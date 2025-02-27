@@ -6,7 +6,7 @@ export const siteConfig = {
   navItems: [
     {
       label: 'Home',
-      href: '/',
+      href: '#',
     },
     {
       label: 'Proyectos',
@@ -28,7 +28,7 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: 'Home',
-      href: '/',
+      href: '#',
     },
     {
       label: 'Proyectos',
@@ -49,14 +49,15 @@ export const siteConfig = {
   ],
   links: {
     github: 'https://github.com/P0T4TO1',
-    linkedin: 'https://www.linkedin.com/in/jaret-garcia/',
+    linkedin:
+      'https://www.linkedin.com/in/jaret-garc%C3%ADa-g%C3%B3mez-2545082b7/',
     email: 'jaretgarciagomez@gmail.com',
     whatsapp: 'https://wa.me/5567621246',
   },
   contacts: [
     {
       name: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/jaret-garcia/',
+      link: 'https://www.linkedin.com/in/jaret-garc%C3%ADa-g%C3%B3mez-2545082b7/',
       type: 'Linkedin',
     },
     {
@@ -208,3 +209,30 @@ export const skillsURLs = {
     },
   ],
 };
+
+export const projects = [
+  {
+    title: 'Harvest Reborn',
+    description:
+      'Aplicación web para la gestión de los inventarios de pequeñas y medianas recauderias, con enfoque en la reducción de desperdicios y la optimización de los procesos de compra y venta asi como la posibilidad de realizar donaciones a organizaciones benéficas o interesados. Diseño, implementación y mantenimiento de la aplicación realizado completamente por mi.',
+    image: '/HR_screen0.png',
+    link: 'https://harvestreborn.me',
+    techs: ['TypeScript', 'Next.js', 'HeroUI', 'PostgreSQL', 'Prisma'],
+  },
+  {
+    title: 'ClinicQ',
+    description:
+      'Aplicación web para la gestión de citas enfocada a un solo consultorio o clínica médica, con la posibilidad de gestionar los pacientes, citas, historiales médicos y recetas. Diseño, implementación y mantenimiento de la aplicación realizado completamente por mi.',
+    image: '/skeleton-loading.jpg',
+    link: 'https://clinicq.vercel.app',
+    techs: ['JavaScript', 'PHP', 'Laravel', 'MySQL'],
+  },
+  {
+    title: 'Tetris 1v1',
+    description:
+      'Juego de Tetris multijugador en tiempo real, con salas de juego y chat. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React, Socket.io, Node y Express para la comunicación en tiempo real y la gestión de las salas de juego.',
+    image: '/tetris1v1_screen.png',
+    link: 'https://tetris1v1-b491b57867ff.herokuapp.com',
+    techs: ['JavaScript', 'Node.js', 'Express'],
+  },
+];

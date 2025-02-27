@@ -7,19 +7,19 @@ import { FileUser, PanelsTopLeft } from 'lucide-react';
 import { ProjectCard, ContactCard } from '@/components/card';
 import { SkillArea } from '@/components/skillItem';
 import { Timeline } from '@/components/timeline';
-import { siteConfig, skillsURLs } from '@/config/site';
 import { title, subtitle } from '@/components/primitives';
-import {
-  GithubIcon,
-  LinkedinIcon,
-  MailIcon,
-  WhatsappIcon,
-} from '@/components/icons';
+import { GithubIcon, LinkedinIcon } from '@/components/icons';
+
+import { siteConfig, skillsURLs, projects } from '@/config/site';
+import type { Techs } from '@/types';
 
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col justify-center gap-4 py-8 md:py-10">
+      <section
+        className="flex flex-col justify-center gap-4 py-12 md:py-16"
+        id="home"
+      >
         <div className="inline-block max-w-xl justify-center">
           <span className={title()}>Jaret&nbsp;</span>
           <span className={title({ color: 'blue' })}>Garcia &nbsp;</span>
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-8 md:py-10"
+        className="flex flex-col justify-center gap-4 py-12 md:py-16"
         id="projects"
       >
         <div className="inline-block max-w-xl justify-center">
@@ -82,48 +82,18 @@ export default function Home() {
           </span>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <ProjectCard
-            project={{
-              title: 'Harvest Reborn',
-              description:
-                'Aplicación web para la gestión de los inventarios de pequeñas y medianas recauderias, con enfoque en la reducción de desperdicios y la optimización de los procesos de compra y venta asi como la posibilidad de realizar donaciones a organizaciones benéficas o interesados. Diseño, implementación y mantenimiento de la aplicación realizado completamente por mi.',
-              image: '/HR_screen0.png',
-              link: 'https://harvestreborn.me',
-            }}
-            techs={['TypeScript', 'Next.js', 'HeroUI', 'PostgreSQL', 'Prisma']}
-          />
-          <ProjectCard
-            project={{
-              title: 'ReserVita',
-              description:
-                'Aplicación web para la gestión de reservaciones en restaurantes, con enfoque en la reducción de tiempos de espera y la optimización de la gestión de mesas y reservaciones. Desarrollado por mi, con el fin de aprender y mejorar mis habilidades sobre el entendimeinto de las necesidades de los usuarios y la creación de soluciones tecnológicas, como también para practicar el uso de tecnologías como Laravel.',
-              image: '/HR_screen0.png',
-              link: 'https://harvestreborn.me',
-            }}
-            techs={[
-              'TypeScript',
-              'Next.js',
-              'HeroUI',
-              'PostgreSQL',
-              'Prisma',
-              'Laravel',
-            ]}
-          />
-          <ProjectCard
-            project={{
-              title: 'Tetris 1v1',
-              description:
-                'Juego de Tetris multijugador en tiempo real, con salas de juego y chat. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React, Socket.io, Node y Express para la comunicación en tiempo real y la gestión de las salas de juego.',
-              image: '/tetris1v1_screen.png',
-              link: 'https://tetris1v1-b491b57867ff.herokuapp.com',
-            }}
-            techs={['JavaScript', 'Node.js', 'Express']}
-          />
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              techs={project.techs as Techs[]}
+            />
+          ))}
         </div>
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-8 md:py-10"
+        className="flex flex-col justify-center gap-4 py-12 md:py-16"
         id="skills"
       >
         <div className="inline-block max-w-xl justify-center">
@@ -141,7 +111,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-8 md:py-10"
+        className="flex flex-col justify-center gap-4 py-12 md:py-16"
         id="about"
       >
         <div className="my-4">
@@ -184,7 +154,11 @@ export default function Home() {
           <Timeline />
         </div>
       </section>
-      <section className="flex flex-col justify-center gap-4 py-8 md:py-10">
+
+      <section
+        className="flex flex-col justify-center gap-4 py-12 md:py-16"
+        id="contact"
+      >
         <div className="inline-block max-w-xl justify-center">
           <span className="font-semibold text-4xl">Contacto</span>
         </div>

@@ -15,7 +15,7 @@ type ProjectCardProps = {
     image: string;
     link: string;
   };
-  techs: (keyof typeof techsIcons)[];
+  techs: (keyof typeof techsIcons)[] ;
 };
 
 type ContactCardProps = {
