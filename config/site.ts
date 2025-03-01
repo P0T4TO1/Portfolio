@@ -96,16 +96,6 @@ export const skillsURLs = {
       label: 'Next',
     },
     {
-      alt: 'php',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539641/portfolio%20images/sisrzodl1fai1jb2vacf.png',
-      label: 'PHP',
-    },
-    {
-      alt: 'laravel',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539649/portfolio%20images/e3h8achainppqsmwbm9v.png',
-      label: 'Laravel',
-    },
-    {
       alt: 'mysql',
       src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740543811/mysql-logo-pure_ugmkau.svg',
       label: 'MySQL',
@@ -149,6 +139,11 @@ export const skillsURLs = {
       label: 'React',
     },
     {
+      alt: 'reactnative',
+      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539800/portfolio%20images/kkocvmuamxqfoodlzvlm.svg',
+      label: 'React Native',
+    },
+    {
       alt: 'tailwind',
       src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539541/portfolio%20images/y3jrnsz4g90ted1xu0df.png',
       label: 'Tailwind',
@@ -161,24 +156,14 @@ export const skillsURLs = {
   ],
   Aprendiendo: [
     {
-      alt: 'angular',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539709/portfolio%20images/iuqwhszm0xngfuoafeyg.png',
-      label: 'Angular',
+      alt: 'php',
+      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539641/portfolio%20images/sisrzodl1fai1jb2vacf.png',
+      label: 'PHP',
     },
     {
-      alt: 'astro',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740543670/astro-framework_ygf70q.svg',
-      label: 'Astro',
-    },
-    {
-      alt: 'phyton',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539744/portfolio%20images/ruifkex6xmnwfy2wdz28.png',
-      label: 'Phyton',
-    },
-    {
-      alt: 'django',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539754/portfolio%20images/nvq56swm0xhc2isqwt6b.png',
-      label: 'Django',
+      alt: 'laravel',
+      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539649/portfolio%20images/e3h8achainppqsmwbm9v.png',
+      label: 'Laravel',
     },
     {
       alt: 'docker',
@@ -196,11 +181,6 @@ export const skillsURLs = {
       alt: 'github',
       src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539792/portfolio%20images/rtoijgxg8ksxhgtmpzj3.png',
       label: 'GitHub',
-    },
-    {
-      alt: 'reactnative',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539800/portfolio%20images/kkocvmuamxqfoodlzvlm.svg',
-      label: 'React Native',
     },
     {
       alt: 'vercel',
