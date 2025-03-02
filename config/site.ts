@@ -204,7 +204,7 @@ export const projects = [
     description:
       'E-commerce de ropa y accesorios, con sistema de autenticación, carrito de compras y pagos con Stripe. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React y MaterialUI para el diseño y la interacción con el usuario.',
     image: '/oneandonly_screen.png',
-    link: '/#',
+    link: 'https://oneandonly-one.vercel.app',
     techs: ['TypeScript', 'Next.js', 'MongoDB'],
   },
   {
