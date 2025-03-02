@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-12 md:py-16"
+        className="flex flex-col justify-center gap-4 py-20 md:py-16"
         id="projects"
       >
         <div className="inline-block max-w-xl justify-center">
@@ -96,7 +96,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-12 md:py-16"
+        className="flex flex-col justify-center gap-4 py-20 md:py-16"
         id="skills"
       >
         <div className="inline-block max-w-xl justify-center">
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col justify-center gap-4 py-12 md:py-16"
+        className="flex flex-col justify-center gap-4 py-20 md:py-16"
         id="about"
       >
         <div className="my-4">
