@@ -200,12 +200,12 @@ export const projects = [
     techs: ['TypeScript', 'Next.js', 'HeroUI', 'PostgreSQL', 'Prisma'],
   },
   {
-    title: 'ClinicQ',
+    title: 'One&Only',
     description:
-      'Aplicación web para la gestión de citas enfocada a un solo consultorio o clínica médica, con la posibilidad de gestionar los pacientes, citas, historiales médicos y recetas. Diseño, implementación y mantenimiento de la aplicación realizado completamente por mi.',
-    image: '/skeleton-loading.jpg',
-    link: 'https://clinicq.vercel.app',
-    techs: ['JavaScript', 'PHP', 'Laravel', 'MySQL'],
+      'E-commerce de ropa y accesorios, con sistema de autenticación, carrito de compras y pagos con Stripe. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React y MaterialUI para el diseño y la interacción con el usuario.',
+    image: '/oneandonly_screen.png',
+    link: '/#',
+    techs: ['TypeScript', 'Next.js', 'MongoDB'],
   },
   {
     title: 'Tetris 1v1',

@@ -57,6 +57,7 @@ export default function Home() {
             Proyectos
           </Button>
           <Button
+            as={Link}
             className={buttonStyles({
               color: 'primary',
               radius: 'full',
@@ -64,8 +65,10 @@ export default function Home() {
             })}
             endContent={<FileUser />}
             size="lg"
+            href="/CV.pdf"
+            isExternal
           >
-            Descargar CV
+            Ver CV
           </Button>
         </div>
       </section>
@@ -120,21 +123,29 @@ export default function Home() {
               <span className="font-semibold text-3xl">Sobre mi</span>
               <br />
               <p className="text-md text-default-700 my-2">
-                Soy un desarrollador de 20 años, con experiencia en el
-                desarrollo de aplicaciones web y móviles, interesado en la
-                optimización de procesos y la creación de soluciones
-                tecnológicas innovadoras. Egresado del CECyT 9 &quot;Juan de
-                Dios Bátiz&quot; en la carrera de Técnico en Programación y
+                Soy un desarrollador de 19 años, con{' '}
+                <span className="font-bold">
+                  experiencia en el desarrollo de aplicaciones web y móviles
+                </span>
+                , interesado en la optimización de procesos y la creación de
+                soluciones tecnológicas innovadoras. Egresado del CECyT 9
+                &quot;Juan de Dios Bátiz&quot; en la carrera de{' '}
+                <span className="font-bold">Técnico en Programación</span> y
                 actualmente estudiante de la carrera de Licenciatura en
                 Informática en la Universidad Nacional Autónoma de México
                 (UNAM). Me apasiona la tecnología y la programación, y busco
                 siempre aprender y mejorar mis habilidades. Desde temprano en mi
                 formacion técnica he trabajado en proyectos de desarrollo de
-                software, adquiriendo bases sólidas en el desarrollo de
-                aplicaciones web y móviles, así como en la gestión de bases de
-                datos y el análisis de datos. Actualmente me encuentro en la
-                búsqueda de oportunidades laborales que me permitan seguir
-                creciendo y desarrollándome como profesional.
+                software, adquiriendo{' '}
+                <span className="font-bold">bases sólidas</span> en el
+                desarrollo de aplicaciones web y móviles, así como en la gestión
+                de{' '}
+                <span className="font-bold">
+                  bases de datos y el análisis de datos
+                </span>
+                . Actualmente me encuentro en la búsqueda de oportunidades
+                laborales que me permitan seguir creciendo y desarrollándome
+                como profesional.
               </p>
             </div>
             <div className="flex inline-block items-center justify-center">
@@ -142,7 +153,7 @@ export default function Home() {
                 alt="Jaret Garcia"
                 className="bg-stone-500"
                 radius="full"
-                src="/jaret.jpg"
+                src="/perfil.jpeg"
                 width={300}
               />
             </div>
