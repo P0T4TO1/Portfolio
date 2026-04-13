@@ -14,7 +14,7 @@ type SkillAreaProps = {
 
 export const SkillItem: React.FC<SkillItemProps> = ({ alt, src, label }) => {
   return (
-    <div className="flex justify-center items-center flex-col gap-2">
+    <div className="flex justify-center items-center flex-col gap-2 transition-transform hover:scale-110">
       <Image alt={alt} src={src} width={50} height={50} />
       <p
         className="text-default-700 font-semibold"

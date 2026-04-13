@@ -139,36 +139,9 @@ export const skillsURLs = {
       label: 'React',
     },
     {
-      alt: 'reactnative',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539800/portfolio%20images/kkocvmuamxqfoodlzvlm.svg',
-      label: 'React Native',
-    },
-    {
       alt: 'tailwind',
       src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539541/portfolio%20images/y3jrnsz4g90ted1xu0df.png',
       label: 'Tailwind',
-    },
-    {
-      alt: 'bootstrap',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539548/portfolio%20images/gocdobxfhuyouoim0jf2.png',
-      label: 'Bootstrap',
-    },
-  ],
-  Aprendiendo: [
-    {
-      alt: 'php',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539641/portfolio%20images/sisrzodl1fai1jb2vacf.png',
-      label: 'PHP',
-    },
-    {
-      alt: 'laravel',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539649/portfolio%20images/e3h8achainppqsmwbm9v.png',
-      label: 'Laravel',
-    },
-    {
-      alt: 'docker',
-      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740539777/portfolio%20images/n9fwgahwnjlvj7trpe6m.png',
-      label: 'Docker',
     },
   ],
   Herramientas: [
@@ -206,13 +179,5 @@ export const projects = [
     image: '/oneandonly_screen.png',
     link: 'https://oneandonly-one.vercel.app',
     techs: ['TypeScript', 'Next.js', 'MongoDB'],
-  },
-  {
-    title: 'Tetris 1v1',
-    description:
-      'Juego de Tetris multijugador en tiempo real, con salas de juego y chat. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React, Socket.io, Node y Express para la comunicación en tiempo real y la gestión de las salas de juego.',
-    image: '/tetris1v1_screen.png',
-    link: 'https://tetris1v1-b491b57867ff.herokuapp.com',
-    techs: ['JavaScript', 'Node.js', 'Express'],
   },
 ];

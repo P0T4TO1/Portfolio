@@ -25,7 +25,7 @@ export default function Home() {
           <span className={title({ color: 'blue' })}>Garcia &nbsp;</span>
           <br />
           <span className={subtitle()}>
-            Desarrollador fullstack y analista de datos
+            Desarrollador web fullstack
           </span>
         </div>
 

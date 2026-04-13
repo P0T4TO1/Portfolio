@@ -15,7 +15,7 @@ export const Timeline = () => {
               width={40}
             />
           </div>
-          <Card className="flex flex-col bg-transparent p-4 gap-2 border-1 border-primary-500/60 gap-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+          <Card className="flex flex-col bg-transparent p-4 gap-2 border-1 border-primary-500/60 gap-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:translate-y-[-5px]">
             <CardHeader className="flex flex-col items-start gap-2">
               <h3 className="text-lg font-bold">
                 UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
@@ -48,7 +48,7 @@ export const Timeline = () => {
               width={40}
             />
           </div>
-          <Card className="flex flex-col p-4 bg-transparent border-1 border-primary-500/60 gap-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+          <Card className="flex flex-col p-4 bg-transparent border-1 border-primary-500/60 gap-2 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:translate-y-[-5px]">
             <CardHeader className="flex flex-col items-start gap-2">
               <h3 className="text-lg font-bold">
                 Centro de Estudios Científicos y Tecnológicos No. 9 "Juan de

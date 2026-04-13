@@ -26,7 +26,7 @@ type ContactCardProps = {
 
 export const ProjectCard = ({ project, techs }: ProjectCardProps) => {
   return (
-    <Card className="flex flex-col gap-2 shadow-2xl shadow-blue-500/20">
+    <Card className="flex flex-col gap-2 shadow-2xl shadow-blue-500/20 transition-transform hover:scale-[1.02]">
       <CardHeader>
         <Image
           alt={project.title}
