@@ -169,7 +169,7 @@ export const projects = [
     description:
       'Aplicación web para la gestión de los inventarios de pequeñas y medianas recauderias, con enfoque en la reducción de desperdicios y la optimización de los procesos de compra y venta asi como la posibilidad de realizar donaciones a organizaciones benéficas o interesados. Diseño, implementación y mantenimiento de la aplicación realizado completamente por mi.',
     image: '/HR_screen0.png',
-    link: 'https://harvestreborn.me',
+    link: 'https://harvest-reborn.vercel.app',
     techs: ['TypeScript', 'Next.js', 'HeroUI', 'PostgreSQL', 'Prisma'],
   },
   {
@@ -177,7 +177,7 @@ export const projects = [
     description:
       'E-commerce de ropa y accesorios, con sistema de autenticación, carrito de compras y pagos con Stripe. Desarrollado en un equipo de 2 personas, mi responsabilidad fue el desarrollo del frontend de la aplicación, utilizando React y MaterialUI para el diseño y la interacción con el usuario.',
     image: '/oneandonly_screen.png',
-    link: 'https://oneandonly-one.vercel.app',
+    link: 'https://oneandonly-eight.vercel.app',
     techs: ['TypeScript', 'Next.js', 'MongoDB'],
   },
 ];
