@@ -143,6 +143,11 @@ export const skillsURLs = {
       src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/c_pad,w_1052,h_1052/v1740539541/portfolio%20images/y3jrnsz4g90ted1xu0df.png',
       label: 'Tailwind',
     },
+    {
+      alt: 'astro',
+      src: 'https://res.cloudinary.com/dugkzbxjh/image/upload/v1740543670/astro-framework_ygf70q.svg',
+      label: 'Astro',
+    }
   ],
   Herramientas: [
     {
@@ -171,6 +176,13 @@ export const projects = [
     image: '/HR_screen0.png',
     link: 'https://harvest-reborn.vercel.app',
     techs: ['TypeScript', 'Next.js', 'HeroUI', 'PostgreSQL', 'Prisma'],
+  },
+  {
+    title: 'Aula Bioquimica',
+    description: 'Plataforma web educativa desarrollada para un docente de bioquímica, enfocada en la presentación de contenido académico, recursos didácticos y artículos especializados mediante una experiencia moderna y optimizada.',
+    image: '/aulabio_screen.png',
+    link: 'https://aulabioquimica.com',
+    techs: ['Astro', 'TypeScript', 'Tailwind'],
   },
   {
     title: 'One&Only',

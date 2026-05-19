@@ -10,6 +10,8 @@ import {
   SiJavascript,
   SiExpress,
   SiMongodb,
+  SiAstro,
+  SiTailwindcss,
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { FaJava, FaNodeJs, FaReact } from 'react-icons/fa';
@@ -31,6 +33,8 @@ export const techsIcons = {
   'Node.js': FaNodeJs,
   React: FaReact,
   MongoDB: SiMongodb,
+  Astro: SiAstro,
+  Tailwind: SiTailwindcss,
 };
 
 export const contactTypes = {

@@ -15,7 +15,7 @@ type ProjectCardProps = {
     image: string;
     link: string;
   };
-  techs: (keyof typeof techsIcons)[] ;
+  techs: (keyof typeof techsIcons)[];
 };
 
 type ContactCardProps = {
@@ -53,17 +53,23 @@ export const ProjectCard = ({ project, techs }: ProjectCardProps) => {
         <p className="text-sm">{project.description}</p>
       </CardBody>
       <CardFooter className="flex flex-wrap gap-1">
-        {techs.map((tech) => (
-          <Chip
-            key={tech}
-            variant="flat"
-            color="primary"
-            size="sm"
-            startContent={React.createElement(techsIcons[tech])}
-          >
-            {tech}
-          </Chip>
-        ))}
+        {techs.map((tech) => {
+          const Icon = techsIcons[tech];
+
+          if (!Icon) return null;
+
+          return (
+            <Chip
+              key={tech}
+              variant="flat"
+              color="primary"
+              size="sm"
+              startContent={<Icon />}
+            >
+              {tech}
+            </Chip>
+          );
+        })}
       </CardFooter>
     </Card>
   );
